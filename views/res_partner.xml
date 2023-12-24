@@ -7,10 +7,28 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//form/sheet/group/group/div[@class='o_address_format']" position="after">
-                    <group>
-                        <field name="manager_name"/>
-                        <field name="manager_phone"/>
+                <!-- <xpath expr="//form/sheet/group/group/div[@class='o_address_format']" position="after"> -->
+                <xpath expr="//form/sheet/group" position="after">
+                    <group string="School Details" col="1">    
+                        <group col="2">
+                            <group string="Manager">
+                                <field name="manager_name"/>
+                                <field name="manager_phone"/>
+                            </group>
+                            <group string="Responsible">
+                                <field name="responsible_name"/>
+                                <field name="responsible_phone"/>
+                            </group>
+                        </group>
+                        <group col="2">
+                            <group string="Curriculum">
+                                <field name="curriculum_type"/>
+                            </group>
+                            <group string="Location">
+                                <field name="latitude"/>
+                                <field name="longitude"/>
+                            </group>
+                        </group>
                     </group>
                 </xpath>
             </field>
