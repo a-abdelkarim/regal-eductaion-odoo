@@ -9,15 +9,17 @@
             <field name="arch" type="xml">
                 <form string="Visit Form">
                     <sheet>
-                        <group col='2'>
+                        <group col="1">    
+                            <group col='2'>
+                                <group>
+                                    <field name="date" />
+                                </group>
+                                <group>
+                                    <field name="partner_id" />
+                                </group>
+                            </group>
                             <group>
                                 <field name="notes" />
-                            </group>
-                            <group>
-                                <field name="partner_id" />
-                            </group>
-                            <group>
-                                <field name="date" />
                             </group>
                         </group>
                     </sheet>

@@ -15,9 +15,11 @@ class ResPartner(models.Model):
     responsible_name = fields.Char(string="Responsible Name")
     responsible_phone = fields.Char(string="Responsible Phone")
     curriculum_type = fields.Selection(selection=CURRICULUM_TYPES, default='american')
-    
     latitude = fields.Float()
     longitude = fields.Float()
+    visits_history_ids = fields.One2many(
+        comodel_name="visit", inverse_name="partner_id", string="Visits History", required=False
+    )
     
     
     
