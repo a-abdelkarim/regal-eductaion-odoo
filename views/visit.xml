@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <!-- =================== start visit view =================== -->
+        <record id="view_visit_form" model="ir.ui.view">
+            <field name="name">visit.form</field>
+            <field name="model">visit</field>
+            <field name="arch" type="xml">
+                <form string="Visit Form">
+                    <sheet>
+                        <group col='2'>
+                            <group>
+                                <field name="notes" />
+                            </group>
+                            <group>
+                                <field name="name" />
+                            </group>
+                            <group>
+                                <field name="date" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_visit_tree" model="ir.ui.view">
+            <field name="name">view.visit.tree</field>
+            <field name="model">visit</field>
+            <field name="arch" type="xml">
+                <tree string="Visit">
+                    <field name="date"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_visit_kanban" model="ir.ui.view">
+            <field name="name">visit.kanban</field>
+            <field name="model">visit</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="oe_kanban_card">
+                                    <div class="oe_kanban_card_content">
+                                        <div class="oe_kanban_card_title">
+                                            <field name="notes"/>
+                                        </div>
+                                        <div class="oe_kanban_card_footer">
+                                            <field name="date"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="action_visit_view" model="ir.actions.act_window">
+            <field name="name">Visit</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">visit</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create new Visit
+                </p>
+                <p>
+                    Click to create a new Visit
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_visit_view" name="Visit" parent="crm.crm_menu_root"
+                  action="action_visit_view" sequence="4" groups="base.group_user"/>
+        <!-- =================== end visit view =================== -->
+    </data>
+    
+
+</odoo>

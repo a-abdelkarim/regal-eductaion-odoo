@@ -18,3 +18,13 @@ class ResPartner(models.Model):
     
     latitude = fields.Float()
     longitude = fields.Float()
+    
+    
+    
+    def view_school_location(self):
+        return {
+            'type': 'ir.actions.act_url',
+            # 'url': f'https://www.google.com/maps/place/{self.latitude},{self.longitude},13z?entry=ttu',
+            'url': f'https://www.google.com.sa/maps/search/{self.latitude},{self.longitude}',
+            'target': 'new',
+        }

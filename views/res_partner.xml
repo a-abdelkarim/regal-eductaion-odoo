@@ -27,6 +27,13 @@
                             <group string="Location">
                                 <field name="latitude"/>
                                 <field name="longitude"/>
+                                <button 
+                                    type="object" 
+                                    class="oe_highlight" 
+                                    title="Show on Map"
+                                    icon="fa-solid fa-globe"
+                                    name="view_school_location"
+                                />
                             </group>
                         </group>
                     </group>
