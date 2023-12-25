@@ -14,7 +14,7 @@
                                 <field name="notes" />
                             </group>
                             <group>
-                                <field name="name" />
+                                <field name="partner_id" />
                             </group>
                             <group>
                                 <field name="date" />
@@ -30,6 +30,7 @@
             <field name="model">visit</field>
             <field name="arch" type="xml">
                 <tree string="Visit">
+                    <field name="partner_id"/>
                     <field name="date"/>
                     <field name="name"/>
                 </tree>
@@ -46,6 +47,9 @@
                             <div class="oe_kanban_global_click">
                                 <div class="oe_kanban_card">
                                     <div class="oe_kanban_card_content">
+                                        <div class="oe_kanban_card_title">
+                                            <field name="partner_id"/>
+                                        </div>
                                         <div class="oe_kanban_card_title">
                                             <field name="notes"/>
                                         </div>
