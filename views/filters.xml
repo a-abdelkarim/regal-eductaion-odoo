@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+    
+        <record id="view_res_partner_filter_inherit" model="ir.ui.view">
+            <field name="name">res.partner.filter.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search/filter" position="after">
+                    <filter string="Curriculum" name="curriculum" context="{'group_by': 'curriculum_type'}"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+    
+</odoo>

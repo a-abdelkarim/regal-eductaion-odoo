@@ -8,7 +8,7 @@ CURRICULUM_TYPES = [
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
-    _description = 'Partner Inherit'
+    _description = 'School'
 
     manager_name = fields.Char(string="Manager Name")
     manager_phone = fields.Char(string="Manager Phone")
