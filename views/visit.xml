@@ -82,8 +82,8 @@
             </field>
         </record>
 
-        <menuitem id="menu_visit_view" name="Visit" parent="crm.crm_menu_root"
-                  action="action_visit_view" sequence="4" groups="base.group_user"/>
+        <menuitem id="menu_visit_view" name="Visits" parent="crm.crm_menu_report"
+                  action="action_visit_view" sequence="4" groups="sales_team.group_sale_salesman"/>
         <!-- =================== end visit view =================== -->
     </data>
     

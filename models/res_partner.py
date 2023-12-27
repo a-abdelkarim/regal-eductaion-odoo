@@ -22,7 +22,6 @@ class ResPartner(models.Model):
     )
     
     
-    
     def view_school_location(self):
         return {
             'type': 'ir.actions.act_url',
