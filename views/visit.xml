@@ -32,9 +32,12 @@
             <field name="model">visit</field>
             <field name="arch" type="xml">
                 <tree string="Visit">
-                    <field name="partner_id"/>
                     <field name="date"/>
-                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="school_curriculum"/>
+                    <field name="school_city"/>
+                    <field name="school_email"/>
+                    <field name="notes" widget="text" class="visit-text"/>
                 </tree>
             </field>
         </record>

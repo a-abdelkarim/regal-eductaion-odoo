@@ -36,4 +36,9 @@
     'demo': [
         'demo/demo.xml',
     ],
+    'assets': {
+        'web.assets_common': [
+            'regal_education/static/src/css/visit.css',
+        ],
+    },
 }
