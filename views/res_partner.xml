@@ -9,7 +9,7 @@
             <field name="arch" type="xml">
                 <!-- <xpath expr="//form/sheet/group/group/div[@class='o_address_format']" position="after"> -->
                 <xpath expr="//form/sheet/group" position="after">
-                    <group string="School Details" col="1">    
+                    <group string="School Details" col="1" attrs="{'invisible': [('is_company', '=', False)]}">    
                         <group col="2">
                             <group string="Manager">
                                 <field name="manager_name"/>
@@ -63,7 +63,7 @@
                 </xpath>
 
                 <xpath expr="//notebook" position="inside">
-                    <page string="Visits History">
+                    <page string="Visits History" attrs="{'invisible': [('is_company', '=', False)]}">
                         <field name="visits_history_ids" readonly="1">
                             <tree create="fasle" edit="false" delete="false">
                                 <field name="date"/>
