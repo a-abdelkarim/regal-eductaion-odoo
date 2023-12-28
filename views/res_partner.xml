@@ -27,7 +27,7 @@
                             <group string="Location" col="1">
                                 <group col="2">
                                     <group>
-                                        <!-- <field name="location_link"/> -->
+                                        <field name="location_link"/>
                                     </group>
                                     <group>
                                         <button 
