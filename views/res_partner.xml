@@ -36,6 +36,7 @@
                                             title="Show on Map"
                                             icon="fa-solid fa-globe"
                                             name="view_school_location_with_link"
+                                            attrs="{'invisible': [('location_link', '=', False)]}"
                                         />
                                     </group>
                                 </group>
