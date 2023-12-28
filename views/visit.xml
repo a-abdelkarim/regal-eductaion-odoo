@@ -35,7 +35,7 @@
                     <field name="date"/>
                     <field name="partner_id"/>
                     <field name="school_curriculum"/>
-                    <field name="school_city"/>
+                    <field name="school_state"/>
                     <field name="school_email"/>
                     <field name="notes" widget="text" class="visit-text"/>
                 </tree>
