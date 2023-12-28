@@ -24,22 +24,38 @@
                             <group string="Curriculum">
                                 <field name="curriculum_type"/>
                             </group>
-                            <group string="Location" col="3">
-                                <group>
-                                    <field name="latitude"/>
+                            <group string="Location" col="1">
+                                <group col="2">
+                                    <group>
+                                        <field name="location_link"/>
+                                    </group>
+                                    <group>
+                                        <button 
+                                            type="object" 
+                                            class="oe_highlight" 
+                                            title="Show on Map"
+                                            icon="fa-solid fa-globe"
+                                            name="view_school_location_with_link"
+                                        />
+                                    </group>
                                 </group>
-                                <group>
-                                    <field name="longitude"/>
-                                </group>
-                                <group>
-                                    <button 
-                                        type="object" 
-                                        class="oe_highlight" 
-                                        title="Show on Map"
-                                        icon="fa-solid fa-globe"
-                                        name="view_school_location"
-                                    />
-                                </group>
+                                <!-- <group col="3">
+                                    <group>
+                                        <field name="latitude"/>
+                                    </group>
+                                    <group>
+                                        <field name="longitude"/>
+                                    </group>
+                                    <group>
+                                        <button 
+                                            type="object" 
+                                            class="oe_highlight" 
+                                            title="Show on Map"
+                                            icon="fa-solid fa-globe"
+                                            name="view_school_location"
+                                        />
+                                    </group>
+                                </group> -->
                             </group>
                         </group>
                     </group>

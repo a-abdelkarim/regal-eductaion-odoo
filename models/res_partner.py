@@ -15,6 +15,7 @@ class ResPartner(models.Model):
     responsible_name = fields.Char(string="Responsible Name")
     responsible_phone = fields.Char(string="Responsible Phone")
     curriculum_type = fields.Selection(selection=CURRICULUM_TYPES, default='american')
+    location_link = fields.Char("Location Link") 
     latitude = fields.Float()
     longitude = fields.Float()
     visits_history_ids = fields.One2many(
@@ -29,3 +30,11 @@ class ResPartner(models.Model):
             'url': f'https://www.google.com.sa/maps/search/{self.latitude},{self.longitude}',
             'target': 'new',
         }
+        
+    def view_school_location_with_link(self):
+        if self.location_link:
+            return {
+                'type': 'ir.actions.act_url',
+                'url': self.location_link,
+                'target': 'new',
+            }
