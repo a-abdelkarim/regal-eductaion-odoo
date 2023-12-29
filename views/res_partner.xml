@@ -11,18 +11,30 @@
                 <xpath expr="//form/sheet/group" position="after">
                     <group string="School Details" col="1" attrs="{'invisible': [('is_company', '=', False)]}">    
                         <group col="2">
-                            <group string="Manager">
-                                <field name="manager_name"/>
-                                <field name="manager_phone"/>
-                            </group>
-                            <group string="Responsible">
-                                <field name="responsible_name"/>
-                                <field name="responsible_phone"/>
+                            <group string="Type">
+                                <field name="school_type"/>
                             </group>
                         </group>
                         <group col="2">
-                            <group string="Curriculum">
+                            <group string="Manager">
+                                <field name="manager_name"/>
+                                <field name="manager_phone"/>
+                                <field name="manager_email"/>
+                            </group>
+                            <group string="Academic">
+                                <field name="academic_name"/>
+                                <field name="academic_phone"/>
+                                <field name="academic_email"/>
+                            </group>
+                        </group>
+                        <group col="2">
+                            <group string="Curriculum" col="1">
+                            <group>
                                 <field name="curriculum_type"/>
+                            </group>
+                            <group attrs="{'invisible': [('curriculum_type', '!=', 'multiple')]}">
+                                <field name="primary_curriculum"/>
+                            </group>
                             </group>
                             <group string="Location" col="1">
                                 <group col="2">
