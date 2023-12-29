@@ -16,19 +16,19 @@
                             </group>
                         </group>
                         <group col="2">
-                            <group string="Manager">
+                            <group string="Manager Details">
                                 <field name="manager_name"/>
                                 <field name="manager_phone"/>
                                 <field name="manager_email"/>
                             </group>
-                            <group string="Academic">
+                            <group string="Academic Details">
                                 <field name="academic_name"/>
                                 <field name="academic_phone"/>
                                 <field name="academic_email"/>
                             </group>
                         </group>
                         <group col="2">
-                            <group string="Curriculum" col="1">
+                            <group string="Curriculum Details" col="1">
                             <group>
                                 <field name="curriculum_type"/>
                             </group>
@@ -36,7 +36,7 @@
                                 <field name="primary_curriculum"/>
                             </group>
                             </group>
-                            <group string="Location" col="1">
+                            <group string="Location Details" col="1">
                                 <group col="2">
                                     <group>
                                         <field name="location_link"/>
