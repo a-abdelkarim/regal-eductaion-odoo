@@ -25,6 +25,7 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
     _description = 'School'
 
+    arabic_name = fields.Char("Arabic Name")
     manager_name = fields.Char(string="Manager Name")
     manager_phone = fields.Char(string="Manager Phone")
     manager_email = fields.Char(string="Manager Email")

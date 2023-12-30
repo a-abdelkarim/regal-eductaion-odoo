@@ -13,6 +13,7 @@
             <field name="perm_unlink" eval="0"/>
             <field name="groups" eval="[(4, ref('base.group_user'))]"/>
         </record> -->
+
     </data>
     
 
