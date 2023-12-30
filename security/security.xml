@@ -3,7 +3,7 @@
 
     <data>
          <!-- ============================= Visit Rules ================================= -->
-        <record id="rule_own_visits_user" model="ir.rule">
+        <!-- <record id="rule_own_visits_user" model="ir.rule">
             <field name="name">User: see own visits only</field>
             <field ref="model_visit" name="model_id"/>
             <field name="domain_force">[('create_uid', '=', user.id)]</field>
@@ -11,9 +11,8 @@
             <field name="perm_create" eval="1"/>
             <field name="perm_read" eval="1"/>
             <field name="perm_unlink" eval="0"/>
-            <!-- You can attach this rule to a specific group, Or make it Global -->
             <field name="groups" eval="[(4, ref('base.group_user'))]"/>
-        </record>
+        </record> -->
     </data>
     
 

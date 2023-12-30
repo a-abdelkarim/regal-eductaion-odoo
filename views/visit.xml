@@ -21,6 +21,9 @@
                             <group>
                                 <field name="notes" />
                             </group>
+                            <group>
+                                <field name="create_uid" readonly="1"></field>
+                            </group>
                         </group>
                     </sheet>
                 </form>
@@ -38,6 +41,7 @@
                     <field name="school_state"/>
                     <field name="school_email"/>
                     <field name="notes" widget="text" class="visit-text"/>
+                    <field name="create_uid"></field>
                 </tree>
             </field>
         </record>
