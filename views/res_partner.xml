@@ -7,7 +7,9 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
-                <!-- <xpath expr="//form/sheet/group/group/div[@class='o_address_format']" position="after"> -->
+                <xpath expr="//form/sheet/div/h1/field" position="after">
+                    <field name="arabic_name" placeholder="Arabic Name"/>
+                </xpath>
                 <xpath expr="//form/sheet/group" position="after">
                     <group string="School Details" col="1" attrs="{'invisible': [('is_company', '=', False)]}">    
                         <group col="2">
