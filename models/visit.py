@@ -6,7 +6,7 @@ class Visit(models.Model):
     _description = 'School Visit'
     
     name = fields.Char('name')
-    partner_id = fields.Many2one(comodel_name='res.partner', string='Customer', required=True)
+    partner_id = fields.Many2one(comodel_name='res.partner', string='Customer', required=True, ondelete='cascade')
     partner_name = fields.Char(related='partner_id.name')
     school_curriculum = fields.Selection(related='partner_id.curriculum_type')
     school_state = fields.Many2one(related='partner_id.state_id')

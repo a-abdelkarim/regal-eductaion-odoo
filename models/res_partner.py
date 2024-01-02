@@ -39,7 +39,10 @@ class ResPartner(models.Model):
     latitude = fields.Float()
     longitude = fields.Float()
     visits_history_ids = fields.One2many(
-        comodel_name="visit", inverse_name="partner_id", string="Visits History", required=False
+        comodel_name="visit", 
+        inverse_name="partner_id", 
+        string="Visits History", 
+        required=False
     )
     
     
