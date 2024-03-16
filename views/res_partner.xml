@@ -112,6 +112,26 @@
                 </xpath>
             </field>
         </record>
+
+        <record id="view_res_partner_tree_override" model="ir.ui.view">
+            <field name="name">res.partner.tree.override</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='country_id']" position="after">
+                    <field name="manager_name"></field>
+                    <field name="manager_phone"></field>
+                    <field name="manager_email"></field>
+                    <field name="academic_name"></field>
+                    <field name="academic_phone"></field>
+                    <field name="academic_email"></field>
+                    <field name="curriculum_type"></field>
+                    <field name="primary_curriculum"></field>
+                    <field name="school_type"></field>
+                    <field name="location_link"></field>
+                </xpath>
+            </field>
+        </record>
     </data>
 
 
